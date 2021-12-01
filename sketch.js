@@ -84,7 +84,7 @@ function simulateBubbleSort() {
 }
 
 function bubbleSort() {
-  for (let k = 0; k < 50; k++) {
+  for (let k = 0; k < 40; k++) {
     if (i < values.length) {
       let temp = values[j];
       if (values[j] > values[j + 1]) {
