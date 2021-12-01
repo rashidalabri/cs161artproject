@@ -28,7 +28,7 @@ function setup() {
     values.push(random(360));
   }
 
-  frameRate(25);
+  frameRate(100);
   colorMode(HSB);
 
   increasing = true;
@@ -84,7 +84,7 @@ function simulateBubbleSort() {
 }
 
 function bubbleSort() {
-  for (let k = 0; k < 250; k++) {
+  for (let k = 0; k < 50; k++) {
     if (i < values.length) {
       let temp = values[j];
       if (values[j] > values[j + 1]) {
@@ -98,12 +98,13 @@ function bubbleSort() {
         i++;
       }
     } else {
-      values = [];
-      i = 0;
-      j = 0;
-      for (let k = 0; k < width / 10; k++) {
-        values.push(random(360));
-      }
+      // noLoop();
+      // values = [];
+      // i = 0;
+      // j = 0;
+      // for (let k = 0; k < width / 10; k++) {
+      //   values.push(random(360));
+      // }
     }
   }
 }
